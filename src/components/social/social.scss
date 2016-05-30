@@ -1,0 +1,17 @@
+.social {
+  float: right;
+  padding: 28px 0 0 0;
+  margin: 0;
+  border: 0;
+
+  list-style: none;
+
+  &__item {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+  }
+  &__image {
+    width: 100%;
+  }
+}

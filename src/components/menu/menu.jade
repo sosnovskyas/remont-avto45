@@ -1,0 +1,8 @@
+mixin menu(items)
+  ul.menu
+    each item in items
+      li.menu__item
+        if page == item.name
+          a.menu__link.menu__link_active(href=item.link)= item.title
+        else
+          a.menu__link(href=item.link)= item.title

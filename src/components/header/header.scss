@@ -1,4 +1,12 @@
 .header {
-  //background-color:  #757373;
-  background-color: linear-gradient(to top, #757373, #f1da36);
+  background-color: #757373;
+  border-bottom: 5px solid #fff;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+
+  margin-bottom: 20px;
+
+  &__wrapper {
+    @extend .wrapper;
+    @include clearfix();
+  }
 }

@@ -1,15 +1,27 @@
+include ./../components/header/header
+include ./../components/footer/footer
+include ./../components/sidebar/sidebar
+
 doctype html
 html(lang='en')
   head
+    link(rel='stylesheet' href='assets/styles.css')
+    link( rel='icon' type='image/png' href='/someimage.png')
     block title
       title Default title
 
     meta(charset='utf-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
 
     block meta
       meta(name='Keywords' content='default')
       meta(name='description' content='Сайт об HTML и создании сайтов')
 
   body
-    block content
+    +header()
+    .wrapper.content
+      section.section
+        block content
+      +sidebar()
+    +footer()
+

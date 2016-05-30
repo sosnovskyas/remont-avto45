@@ -1,4 +1,60 @@
 @import "../node_modules/normalize.css/normalize";
-body{
+@import "layout/variables";
+@import "layout/mixins";
+
+.wrapper {
+  @include clearfix();
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body {
+  //position: relative;
+  min-width: 960px;
   background-color: #fff;
 }
+
+
+.section {
+  float: right;
+  width: 80%;
+
+  // footer shadow compensation
+  margin-bottom: 20px;
+}
+
+/*
+    sticky footer for
+*/
+
+html{
+  height: 100%;
+}
+body{
+
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  height: $footerHeight; /* Задаем фиксированную высоту для футера */
+}
+
+.content {
+  padding-bottom: $footerHeight; /* Значение должно равняться высоте нашего футера */
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+@import "components/header/header";
+@import "components/logo/logo";
+@import "components/social/social";
+@import "components/info/info";
+@import "components/sidebar/sidebar";
+@import "components/menu/menu";
+@import "components/footer/footer";
