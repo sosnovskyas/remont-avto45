@@ -1,4 +1,9 @@
 @import "../node_modules/normalize.css/normalize";
+@import "layout/variables";
+@import "layout/mixins";
 body{
   background-color: #fff;
 }
+
+@import "components/header/header";
+@import "components/logo/logo";
