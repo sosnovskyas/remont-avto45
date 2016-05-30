@@ -14,10 +14,6 @@ body {
   background-color: #fff;
 }
 
-.nav {
-  float: left;
-  width: 20%;
-}
 
 .section {
   float: right;
@@ -28,4 +24,6 @@ body {
 @import "components/logo/logo";
 @import "components/social/social";
 @import "components/info/info";
+@import "components/sidebar/sidebar";
+@import "components/menu/menu";
 @import "components/footer/footer";

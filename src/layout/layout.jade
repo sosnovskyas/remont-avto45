@@ -1,6 +1,7 @@
 include ./../components/header/header
-include ./../components/menu/menu
 include ./../components/footer/footer
+include ./../components/sidebar/sidebar
+
 doctype html
 html(lang='en')
   head
@@ -21,7 +22,6 @@ html(lang='en')
     .wrapper
       section.section
         block content
-      nav.nav
-        +menu()
+      +sidebar()
     +footer()
 
