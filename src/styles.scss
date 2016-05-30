@@ -1,7 +1,13 @@
 @import "../node_modules/normalize.css/normalize";
 @import "layout/variables";
 @import "layout/mixins";
-body{
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body {
   background-color: #fff;
 }
 
