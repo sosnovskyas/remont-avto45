@@ -1,3 +1,6 @@
-mixin logo(logo)
-  .logo__wrapper
-    img.logo__image(src=logo alt='logo')
+mixin social(obj)
+  ul.social
+    each soc in obj
+      li.social__item
+        a.social__link(href=soc.link target='_blank')
+          img.social__image(src=soc.icon alt=soc.name)
