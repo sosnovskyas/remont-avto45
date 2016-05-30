@@ -1,13 +1,16 @@
 include ./../components/header/header
+include ./../components/menu/menu
+include ./../components/footer/footer
 doctype html
 html(lang='en')
   head
-    link(rel="stylesheet" href="assets/styles.css")
+    link(rel='stylesheet' href='assets/styles.css')
+    link( rel='icon' type='image/png' href='/someimage.png')
     block title
       title Default title
 
     meta(charset='utf-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
 
     block meta
       meta(name='Keywords' content='default')
@@ -15,4 +18,10 @@ html(lang='en')
 
   body
     +header()
-    block content
+    .wrapper
+      section.section
+        block content
+      nav.nav
+        +menu()
+    +footer()
+

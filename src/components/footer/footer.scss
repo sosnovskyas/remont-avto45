@@ -1,0 +1,6 @@
+.footer {
+  background-color: lemonchiffon;
+  &__wrapper{
+    @extend .wrapper
+  }
+}

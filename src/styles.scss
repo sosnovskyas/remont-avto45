@@ -3,15 +3,29 @@
 @import "layout/mixins";
 
 .wrapper {
+  @include clearfix();
   max-width: 960px;
   margin: 0 auto;
 }
 
 body {
+  position: relative;
+  min-width: 960px;
   background-color: #fff;
+}
+
+.nav {
+  float: left;
+  width: 20%;
+}
+
+.section {
+  float: right;
+  width: 80%;
 }
 
 @import "components/header/header";
 @import "components/logo/logo";
 @import "components/social/social";
 @import "components/info/info";
+@import "components/footer/footer";
