@@ -1,4 +1,5 @@
 .header {
+  @include clearfix();
   //background-color:  #757373;
   background-color: linear-gradient(to top, #757373, #f1da36);
 }
