@@ -7,8 +7,9 @@
   border-radius: 5px;
   overflow: hidden;
 
-  &__item {
+  margin-bottom: 20px;
 
+  &__item {
 
   }
 
@@ -16,7 +17,11 @@
     display: block;
     padding: 10px;
     background-color: darkgrey;
+    &:hover {
+      background-color: yellow;
+    }
   }
+
   &__title {
 
   }
