@@ -9,7 +9,7 @@
 }
 
 body {
-  position: relative;
+  //position: relative;
   min-width: 960px;
   background-color: #fff;
 }
@@ -18,6 +18,35 @@ body {
 .section {
   float: right;
   width: 80%;
+}
+
+/*
+    sticky footer for
+*/
+
+html{
+  height: 100%;
+}
+body{
+
+  position: relative;
+  min-height: 100%;
+}
+
+
+.footer {
+  height: $footerHeight; /* Задаем фиксированную высоту для футера */
+}
+
+.content {
+  padding-bottom: $footerHeight; /* Значение должно равняться высоте нашего футера */
+}
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 @import "components/header/header";

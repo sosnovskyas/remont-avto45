@@ -1,6 +1,17 @@
 .footer {
-  background-color: lemonchiffon;
+  background-color: #757373;
+  border-top: 5px solid #fff;
+  box-shadow: 0 -5px 5px 0 rgba(0, 0, 0, 0.3);
+
   &__wrapper{
-    @extend .wrapper
+    @extend .wrapper;
+    padding: 15px;
+  }
+
+  &__sitemap{
+    float: left;
+  }
+  &__copyright{
+    float: right;
   }
 }
