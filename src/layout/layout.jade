@@ -1,3 +1,4 @@
+include ./../components/header/header
 doctype html
 html(lang='en')
   head
@@ -12,4 +13,5 @@ html(lang='en')
       meta(name='description' content='Сайт об HTML и создании сайтов')
 
   body
+    +header()
     block content
