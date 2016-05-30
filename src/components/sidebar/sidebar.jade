@@ -1,2 +1,16 @@
+include ./../menu/menu
+
+- var menu_about = {title: 'О нас', link: '/about.html'}
+- var menu_service = {title: 'Услуги', link: '/service.html'}
+- var menu_price = {title: 'Цены', link: '/price.html'}
+- var menu_discoutn = {title: 'Акции', link: '/discoutn.html'}
+- var menu_news = {title: 'Новости', link: '/news.html'}
+- var menu_feedback = {title: 'Отзывы', link: '/feedback.html'}
+- var menu_contacts = {title: 'Контакты', link: '/contacts.html'}
+- var menu = [menu_service, menu_about, menu_price, menu_discoutn, menu_news, menu_feedback, menu_contacts]
+
 mixin sidebar()
   aside.sidebar
+    nav.nav
+      +menu(menu)
+    .adwords РЕКЛАМА

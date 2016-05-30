@@ -1,3 +1,6 @@
-mixin menu()
+
+mixin menu(items)
   ul.menu
-    span  menu
+    each item in items
+      li.menu__item
+        a.menu__link(href=item.link)= item.title
