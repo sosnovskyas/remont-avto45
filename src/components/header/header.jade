@@ -1,12 +1,18 @@
 include ../logo/logo
 include ../social/social
+include ../info/info
 
 - var vk = {name: 'vk', icon: 'http://icons.iconarchive.com/icons/limav/flat-gradient-social/256/Vk-icon.png', link: 'http://vk.com'}
 - var instagram = {name: 'instagram', icon: 'http://vignette1.wikia.nocookie.net/logopedia/images/3/37/Instagram_Icon.png', link: 'http://instagram.com'}
 - var socials = [ vk, instagram ];
+
+- var tel = {header: 'телефон', text: '+7-777-777-77-77'}
+- var email = {header: 'email', text: 'info@remont-avto45.ru'}
+- var infos = [ tel, email ];
 
 mixin header(name)
   .header
     .header__wrapper
       +logo('https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png')
       +social(socials)
+      +info(infos)
