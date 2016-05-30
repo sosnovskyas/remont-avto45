@@ -15,11 +15,25 @@
 
   &__link {
     display: block;
+
     padding: 10px;
-    background-color: darkgrey;
-    &:hover {
-      background-color: yellow;
+
+    color: #727070;
+    background-color: #bebdbd;
+    background: linear-gradient(to top, #bebdbd, #e8e7e7);
+
+    text-decoration: none;
+
+    &_active {
+      color: #1e7465;
+      background-color: #bebdbd;
+      background: linear-gradient(to top, #40b89a, #7de8cd);
     }
+
+    &:hover {
+      background: yellow;
+    }
+
   }
 
   &__title {
