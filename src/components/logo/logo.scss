@@ -1,8 +1,10 @@
 .logo {
+  float: left;
+  background-color: yellowgreen;
   &__wrapper {
-    float: left;
     width: 100px;
     height: 100px;
+    overflow: hidden;
   }
   &__image {
     width: 100%;
