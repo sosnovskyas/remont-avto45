@@ -12,7 +12,8 @@ const bsServer = browserSync.create();
 
 const paths = {
   styles: {
-    src: ['src/styles.scss', 'src/components/**/*.scss'],
+    src: ['src/styles.scss'],
+    watch: ['src/**/*.scss'],
     dest: 'dist/assets/'
   },
   serve: {
@@ -61,8 +62,8 @@ export function serve() {
 
 
 export function watch() {
-  gulp.watch(paths.styles.src, styles);
-  gulp.watch(paths.templates.src, templates);
+  gulp.watch(paths.styles.watch, styles);
+  gulp.watch(paths.templates.watch, templates);
 }
 
 const build = gulp.series(clean, gulp.parallel(styles, templates), gulp.parallel(watch, serve));
