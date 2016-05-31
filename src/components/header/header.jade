@@ -2,17 +2,9 @@ include ../logo/logo
 include ../social/social
 include ../info/info
 
-- var vk = {name: 'vk', icon: '/assets/vk.png', link: 'http://vk.com/autopomosh_v_kurgane'}
-- var instagram = {name: 'instagram', icon: '/assets/instagram.png', link: 'https://www.instagram.com/autovkurgane/'}
-- var socials = [ vk, instagram ];
-
-- var tel = {header: 'телефон', text: '+7-777-777-77-77'}
-- var email = {header: 'email', text: 'info@remont-avto45.ru'}
-- var infos = [ tel, email ];
-
 mixin header(name)
   .header
     .header__wrapper
-      +logo('/assets/logo.png')
+      +logo(logo_file)
       +social(socials)
       +info(infos)
