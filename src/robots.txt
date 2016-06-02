@@ -1,1 +1,3 @@
 User-agent: *
+Sitemap: http://remont-avto45.ru/sitemap.xml
+
