@@ -1,5 +1,8 @@
 mixin logo(logo)
   .logo
     .logo__wrapper
-      img.logo__image(src=logo alt='logo')
-      .logo__title автоуслуги в кургане
+      // TODO: необходимо стилдизовать ссылки в лого
+      a(href='/')
+        img.logo__image(src=logo alt='logo')
+      a(href='/')
+        .logo__title автоуслуги в кургане
