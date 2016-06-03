@@ -1,4 +1,3 @@
-
 /*
   WARNING!: sticky footer settings in main file
 */
@@ -8,15 +7,19 @@
   border-top: 5px solid #fff;
   box-shadow: 0 -5px 5px 0 rgba(0, 0, 0, 0.3);
 
-  &__wrapper{
+  &__wrapper {
     @extend .wrapper;
     padding: 15px;
   }
 
-  &__sitemap{
+  &__sitemap {
     float: left;
+    &-link {
+      color: #fff;
+      text-decoration: none;
+    }
   }
-  &__copyright{
+  &__copyright {
     float: right;
   }
 }
