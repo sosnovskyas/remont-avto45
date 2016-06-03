@@ -12,5 +12,8 @@
   &__title {
     text-align: center;
     color: #fff;
+    &-link {
+      text-decoration: none;
+    }
   }
 }
