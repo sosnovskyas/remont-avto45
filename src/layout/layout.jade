@@ -2,6 +2,7 @@ include ./../components/header/header
 include ./../components/footer/footer
 include ./../components/sidebar/sidebar
 include ./../components/yandexMetricaCouter/yandexMetricaCouter
+include ./../components/googleAnalitycsCounter/googleAnalitycsCounter
 //-
     LOGO SETTING
 - var logo_file = '/assets/logo.png'
@@ -35,7 +36,7 @@ include ./../components/yandexMetricaCouter/yandexMetricaCouter
 doctype html
 html(lang='en')
   head
-    link(rel='stylesheet' href='assets/styles.css')
+    link(rel='stylesheet' href='/assets/styles.css')
     link( rel='shortcut icon' type='image/x-icon' href='/assets/favicon.ico' )
 
     block title
@@ -57,4 +58,5 @@ html(lang='en')
       +sidebar()
     +footer()
     +yandexMetricaCounter()
+    +googleAnalitycsCounter()
 
