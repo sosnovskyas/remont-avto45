@@ -41,6 +41,7 @@ body{
 }
 
 .content {
+  @extend .wrapper;
   padding-bottom: $footerHeight; /* Значение должно равняться высоте нашего футера */
 }
 
