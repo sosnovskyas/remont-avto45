@@ -9,8 +9,12 @@ block meta
 
 block content
   - var page = 'err404'
-  p Упс...
-  p Извините, страница не найдена или не существует
   p
-    a(href='service.html', target='_blank')
+    b Упс...
+  p
+    b Извините, страница не найдена или не существует
+      = ' '
+      a(href='service.html') Назад на Главную
+  p
+    a(href='service.html')
       img(src='/assets/avto_404_error.jpg', alt='Ошибка 404')
